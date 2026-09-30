@@ -1,4 +1,4 @@
-const ClienteService = require("../services/ClienteService");
+const ClienteService = require("../../services/ClienteService");
 
 describe("ClienteService (unitario com mocks)", () => {
   let service;
@@ -170,5 +170,6 @@ describe("ClienteService (unitario com mocks)", () => {
 
       expect(() => service.remover(99)).toThrow("Cliente nao encontrado");
     });
+  });
   });
 });

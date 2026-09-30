@@ -1,4 +1,4 @@
-const PedidoService = require("../services/PedidoService");
+const PedidoService = require("../../services/PedidoService");
 
 describe("PedidoService (unitario com mocks)", () => {
   let service;
@@ -27,7 +27,6 @@ describe("PedidoService (unitario com mocks)", () => {
           total: 0,
         },
       ];
-
       mockRepository.findAll.mockReturnValue(pedidos);
 
       const resultado = service.listar();
@@ -248,5 +247,6 @@ describe("PedidoService (unitario com mocks)", () => {
         "Pedido nao encontrado"
       );
     });
+  });
   });
 });
